@@ -15,7 +15,7 @@ Kubernetes es una plataforma creada por Google para poder orquestar los contened
 
 K8s al igual que cualquier otro clúster, está formado por nodos (Control Plane) que controlan el clúster.
 
-<<Imagen de arquitectura x >>
+![](./assets/Screenshot%202024-07-05%20at%2021.39.23.png)
 
 A continuación procedemos a explicar cada uno de los componentes que aparecen en la figura[x]
 
