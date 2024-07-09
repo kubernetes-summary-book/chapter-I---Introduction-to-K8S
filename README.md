@@ -58,9 +58,9 @@ Podemos crear un clúster de K8s desde cero, pero disponemos de otra opciones qu
   ```bash 
      minikube start
   ```
-  ```bash macOs
-    Si usamos minikube con el driver de virtualbox o wmware no habrá problemas, **pero si usamos el drive de Docker o Podman**, el acceso a nodo del clúster podría variar con respecto al uso de máquinas virtyales por el tema de separación completa de recursos.
-  ```
+
+Si usamos minikube con el driver de virtualbox o wmware no habrá problemas, **pero si usamos el drive de Docker o Podman**, el acceso a nodo del clúster podría variar con respecto al uso de máquinas virtyales por el tema de separación completa de recursos.
+  
 
 
  ### Clientes:
