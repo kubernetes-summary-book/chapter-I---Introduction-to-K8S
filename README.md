@@ -45,11 +45,32 @@ A continuación procedemos a explicar cada uno de los componentes que aparecen e
 
 Podemos crear un clúster de K8s desde cero, pero disponemos de otra opciones que hacen esta tarea más amena como:
 
-  * `Minikube` : Minikube permite la creación de un clúster 
+  * `Minikube` : Minikube permite la creación de un clúster de kubernetes de forma local en macOs, Linux y Windows. Es una herramienta ideal para los desarrolladores y nuevo usuarios. Además soporta distintas arquitecturas como ARM e Intel.
+  ### Nota : Requisitos Instalación
+  - **Al menos 2 CPUs**.
+  - **2GB** de memoria libre al menos.
+  - **20GB de espacio** libre en disco.
+  - Un **motor de contenedores** (Docker o Podman) o un gestor de máquinas virtuales/hipervisor.
+  
+  ```bash macOs
+     brew install minikube
+  ```
+  ```bash 
+     minikube start
+  ```
+  ```bash macOs
+    Si usamos minikube con el driver de virtualbox o wmware no habrá problemas, **pero si usamos el drive de Docker o Podman**, el acceso a nodo del clúster podría variar con respecto al uso de máquinas virtyales por el tema de separación completa de recursos.
+  ```
 
 
  ### Clientes:
 
+  El cliente oficial en Kubernetes es `kubectl`. Es una herramienta de línea de comandos.
+  También existe una interfaz web oficial que permite al usuario interactuar con clúster desde el navegador de forma visual.
+
+  ```bash 
+     minikube dashboard
+  ```
 ## Authors
 
 - [@Younes Kabiri Farah](https://github.com/younesKabiriFarah)
@@ -63,8 +84,14 @@ Podemos crear un clúster de K8s desde cero, pero disponemos de otra opciones qu
 
 ## Features
 
-- Light/dark mode toggle
-- Live previews
-- Fullscreen mode
-- Cross platform
+- Conceptos básicos
+- Pods
+- Exponiendo Pods
+- Workloads
+- Configuración de aplicaciones y secretos
+- Selección de nodos
+- Volúmenes Persistentes
+- Autorización Basada en Roles
+- Politicas de Red
+- Contexto y Políticas de Seguridad
 
